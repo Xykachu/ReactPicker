@@ -1,13 +1,16 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding:0;
     font-family: sans-serif;
+    cursor:crosshair;
 }
+
 .hero{
     width: 100%;
     min-height: 100vh;
-    background: #3f9e89;
+    background-image: url("https://images.pexels.com/photos/6985045/pexels-photo-6985045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     color: #ffffff;
     display: flex;
 }
@@ -16,20 +19,22 @@
     width: 100%;
     max-width: 400px;
     margin: auto;
-    padding: 30px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
-    background : #04042b;
+    background : #000000;
 }
 
 .hero .container .randomPicker{
-    background: #181831;
+    background-image: url("https://images.pexels.com/photos/7130476/pexels-photo-7130476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     padding: 20px;
+    color: black;
 }
 
 .hero .container .randomPicker h1 span{
-    color: rgb(0, 255, 34);
+    color: rgb(150, 37, 216);
     font-weight: 600;
+    word-break: break-word;
 }
 
 .hero .inputContainer{
@@ -51,10 +56,12 @@
     align-self:  flex-end;
     border: none;
     outline: none;
-    background: #292977;
-    color: #ffffff;
+    background: #9aebe0;
+    color: #000000;
     padding: 14px;
     width: 100%;
     font-size: 22px;
-    cursor: pointer;
+    cursor:crosshair;
+    font-weight: 600;
+    background-image: url("https://images.pexels.com/photos/7130546/pexels-photo-7130546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
