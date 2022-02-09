@@ -9,7 +9,8 @@
 .hero{
     width: 100%;
     min-height: 100vh;
-    background-image: url("https://images.pexels.com/photos/6985045/pexels-photo-6985045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background: rgb(246,249,183);
+background: linear-gradient(90deg, rgba(246,249,183,1) 0%, rgba(235,237,158,1) 29%, rgba(232,189,230,0.9500175070028011) 57%, rgba(223,181,230,1) 100%);
     color: #ffffff;
     display: flex;
 }
@@ -47,6 +48,7 @@
     justify-content: space-between;
     padding-top: 10px;
     width: 100%;
+    word-break: break-word;
 }
 
 .hero .inputContainer div input{
@@ -70,4 +72,6 @@
     font-size: 22px;
     font-weight: 600;
     background-image: url("https://images.pexels.com/photos/7130546/pexels-photo-7130546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    
 }
+button:hover { cursor: pointer }
