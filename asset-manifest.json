@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ReactPicker/static/css/main.ad4bab53.css",
-    "main.js": "/ReactPicker/static/js/main.a30d5294.js",
+    "main.css": "/ReactPicker/static/css/main.0f164d16.css",
+    "main.js": "/ReactPicker/static/js/main.66750998.js",
     "index.html": "/ReactPicker/index.html",
-    "main.ad4bab53.css.map": "/ReactPicker/static/css/main.ad4bab53.css.map",
-    "main.a30d5294.js.map": "/ReactPicker/static/js/main.a30d5294.js.map"
+    "main.0f164d16.css.map": "/ReactPicker/static/css/main.0f164d16.css.map",
+    "main.66750998.js.map": "/ReactPicker/static/js/main.66750998.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad4bab53.css",
-    "static/js/main.a30d5294.js"
+    "static/css/main.0f164d16.css",
+    "static/js/main.66750998.js"
   ]
 }
