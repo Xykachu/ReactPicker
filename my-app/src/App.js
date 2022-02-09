@@ -1,23 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
-const txt = 'uwu';
 
 class App extends React.Component {
   constructor(props){
     super(props);
-    this.state = {text: txt}
-     this.Rando = this.Rando.bind(this);
+    this.state = {text: "welcome uwu", 
+    result: "welcome"};
+     this.rando = this.rando.bind(this);
   }
 
-  Rando(){
+  rando = () => {
     
     const options = this.state.text.split(" ");
     const result = options[Math.floor(Math.random() * options.length)];
-    const newText = result;
-    this.setState({text: newText});
-    console.log(newText);
-  
+    this.setState({text: this.state.text, result: result});
+    console.log(this.state);
+    
   }
   render() {
     return (
@@ -25,7 +22,7 @@ class App extends React.Component {
       <div className="container">
         <div className="randomPicker">
           <h1>
-            Winner: <span>{this.state.text}</span>
+          Winner: <span>{this.state.result}</span>
           </h1>
         </div>
         <div className="inputContainer">
@@ -36,7 +33,7 @@ class App extends React.Component {
             />
           </div>
         </div>
-        <button onClick={this.Rando} >Choose</button>
+        <button onClick={this.rando} >Choose</button>
       </div>
     </div>
     );
