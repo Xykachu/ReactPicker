@@ -40,9 +40,16 @@
 .hero .inputContainer{
     display: flex;
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 50px 0;
     width: 100%;
 }
+.hero .inputContainer p{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    width: 100%;
+}
+
 .hero .inputContainer div input{
     padding: 8px;
     border: none;

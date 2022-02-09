@@ -24,13 +24,15 @@ class App extends React.Component {
           </div>
           <div className="inputContainer">
             <div>
-              <h3>Choices:</h3>
+              <h3>Enter words</h3>
+             
               <input
                 type="string"
                 onChange={(event) => {
                   this.state.text = event.target.value;
                 }}
               />
+              <p>(separated with a space eg. name1 name2 name3)</p>
             </div>
           </div>
           <button onClick={this.rando}>Choose</button>
