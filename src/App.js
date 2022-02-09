@@ -17,10 +17,11 @@ class App extends React.Component {
     return (
       <div className="hero">
         <div className="container">
+        <h2> Winner!</h2>
           <div className="randomPicker">
-            <h1>
-              Winner: <span>{this.state.result}</span>
-            </h1>
+          
+            <h1><span>{this.state.result}</span></h1>
+            
           </div>
           <div className="inputContainer">
             <div>

@@ -10,7 +10,7 @@
     width: 100%;
     min-height: 100vh;
     background: rgb(246,249,183);
-background: linear-gradient(90deg, rgba(246,249,183,1) 0%, rgba(235,237,158,1) 29%, rgba(232,189,230,0.9500175070028011) 57%, rgba(223,181,230,1) 100%);
+    background: linear-gradient(90deg, rgba(246,249,183,1) 0%, rgba(235,237,158,1) 29%, rgba(232,189,230,0.9500175070028011) 57%, rgba(223,181,230,1) 100%);
     color: #ffffff;
     display: flex;
 }
@@ -22,19 +22,25 @@ background: linear-gradient(90deg, rgba(246,249,183,1) 0%, rgba(235,237,158,1) 2
     padding: 50px;
     display: flex;
     flex-direction: column;
-    background : #000000;
+    background: rgb(0,0,0);
+    background: linear-gradient(52deg, rgba(0,0,0,1) 0%, rgba(55,4,53,1) 37%, rgba(28,35,99,1) 52%, rgba(79,65,83,1) 100%);
 }
 
 .hero .container .randomPicker{
-    background-image: url("https://images.pexels.com/photos/7130476/pexels-photo-7130476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background: rgb(255,255,255);
+background: linear-gradient(135deg, rgba(255,255,255,0.5242471988795518) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 63%, rgba(237,235,235,1) 89%);
     padding: 20px;
     color: black;
+    min-height: 80px;
+    text-align: center;
 }
 
 .hero .container .randomPicker h1 span{
     color: rgb(150, 37, 216);
     font-weight: 600;
     word-break: break-word;
+    
+    
 }
 
 .hero .inputContainer{
@@ -72,7 +78,8 @@ background: linear-gradient(90deg, rgba(246,249,183,1) 0%, rgba(235,237,158,1) 2
     width: 100%;
     font-size: 22px;
     font-weight: 600;
-    background-image: url("https://images.pexels.com/photos/7130546/pexels-photo-7130546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background: rgb(183,249,246);
+    background: linear-gradient(52deg, rgba(183,249,246,1) 0%, rgba(158,235,237,1) 37%, rgba(189,232,229,1) 52%, rgba(47,151,209,1) 100%);
 }
 
 button:hover { cursor: pointer }
