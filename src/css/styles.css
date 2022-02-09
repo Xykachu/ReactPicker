@@ -43,6 +43,7 @@ background: linear-gradient(90deg, rgba(246,249,183,1) 0%, rgba(235,237,158,1) 2
     padding: 50px 0;
     width: 100%;
 }
+
 .hero .inputContainer p{
     display: flex;
     justify-content: space-between;
@@ -72,6 +73,6 @@ background: linear-gradient(90deg, rgba(246,249,183,1) 0%, rgba(235,237,158,1) 2
     font-size: 22px;
     font-weight: 600;
     background-image: url("https://images.pexels.com/photos/7130546/pexels-photo-7130546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    
 }
+
 button:hover { cursor: pointer }
