@@ -1,37 +1,46 @@
-import "./css/styles.css";
-import React, { useState } from "react";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
+const txt = 'uwu';
 
-function App() {
-  const state = {
-    text: "uwu daddy"
-};
-  function uwuDaddy(){
-    const options = state.text.split(" ");
-        const result = options[Math.floor(Math.random() * options.length)];
-        console.log(result);
-        return result;
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {text: txt}
+     this.Rando = this.Rando.bind(this);
   }
-  return (
-    <div className="hero">
+
+  Rando(){
+    
+    const options = this.state.text.split(" ");
+    const result = options[Math.floor(Math.random() * options.length)];
+    const newText = result;
+    this.setState({text: newText});
+    console.log(newText);
+  
+  }
+  render() {
+    return (
+      <div className="hero">
       <div className="container">
         <div className="randomPicker">
           <h1>
-            Random: <span>{state.text}</span>
+            Winner: <span>{this.state.text}</span>
           </h1>
         </div>
         <div className="inputContainer">
           <div>
-            <h3>UWUUWUWUWUWUUWUWUWUUWU:</h3>
+            <h3>Choices:</h3>
             <input type="string" 
-            onChange={ (event) => { state.text = event.target.value } }
+            onChange={ (event) => { this.state.text = event.target.value }}
             />
           </div>
         </div>
-        <button onClick={uwuDaddy} >Random</button>
+        <button onClick={this.Rando} >Choose</button>
       </div>
     </div>
-  );
+    );
+  }
 }
 
 export default App;
