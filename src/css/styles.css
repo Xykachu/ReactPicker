@@ -83,3 +83,7 @@ background: linear-gradient(135deg, rgba(255,255,255,0.5242471988795518) 0%, rgb
 }
 
 button:hover { cursor: pointer }
+
+.hero .container h2{
+visibility: hidden;
+}

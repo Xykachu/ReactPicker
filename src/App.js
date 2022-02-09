@@ -6,26 +6,28 @@ class App extends React.Component {
     this.state = { text: "welcome uwu", result: " " };
     this.rando = this.rando.bind(this);
   }
-
+  
   rando = () => {
     const options = this.state.text.split(" ");
     const result = options[Math.floor(Math.random() * options.length)];
     this.setState({ text: this.state.text, result: result });
     console.log(this.state);
+    document.getElementById("winner").style.visibility = "visible";
   };
+
+  
+
   render() {
     return (
       <div className="hero">
         <div className="container">
-        <h2> Winner!</h2>
+        <h2 id="winner"> Winner!</h2>
           <div className="randomPicker">
-          
             <h1><span>{this.state.result}</span></h1>
-            
           </div>
           <div className="inputContainer">
             <div>
-              <h3>Enter words</h3>
+              <h3>Enter Choices:</h3>
              
               <input
                 type="string"
