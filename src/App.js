@@ -3,16 +3,17 @@ import React from "react";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { text: "welcome uwu", result: " " };
+    this.state = { text: "welcome uwu", result: " ", btnText: "Choose", timesRolled: 0};
     this.rando = this.rando.bind(this);
   }
   
   rando = () => {
     const options = this.state.text.split(" ");
     const result = options[Math.floor(Math.random() * options.length)];
-    this.setState({ text: this.state.text, result: result });
+    this.setState({ text: this.state.text, result: result, btnText: "Choose again", timesRolled:this.state.timesRolled +1});
     console.log(this.state);
     document.getElementById("winner").style.visibility = "visible";
+    
   };
 
   
@@ -22,8 +23,10 @@ class App extends React.Component {
       <div className="hero">
         <div className="container">
         <h2 id="winner"> Winner!</h2>
+        <p id="rolled">Times rolled {this.state.timesRolled}</p>
           <div className="randomPicker">
             <h1><span>{this.state.result}</span></h1>
+            
           </div>
           <div className="inputContainer">
             <div>
@@ -38,7 +41,7 @@ class App extends React.Component {
               <p>(separated with a space eg. name1 name2 name3)</p>
             </div>
           </div>
-          <button onClick={this.rando}>Choose</button>
+          <button onClick={this.rando}>{this.state.btnText}</button>
         </div>
       </div>
     );

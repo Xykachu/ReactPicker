@@ -33,6 +33,7 @@ background: linear-gradient(135deg, rgba(255,255,255,0.5242471988795518) 0%, rgb
     color: black;
     min-height: 80px;
     text-align: center;
+    
 }
 
 .hero .container .randomPicker h1 span{
@@ -87,4 +88,7 @@ button:hover { cursor: pointer }
 .hero .container h2{
 visibility: hidden;
 text-align: center;
+}
+.hero .container p{
+    text-align: center;
 }
